@@ -1,0 +1,33 @@
+{
+  "name": "agent-receipt",
+  "version": "1.0.0",
+  "description": "MCP middleware that creates cryptographic receipts for every real tool call — ghost actions leave no receipt",
+  "type": "module",
+  "main": "src/server.js",
+  "bin": {
+    "agent-receipt": "src/server.js"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [
+    "mcp",
+    "agent",
+    "audit",
+    "receipt",
+    "ghost-action",
+    "tool-verification",
+    "ai-agent",
+    "observability"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@supabase/supabase-js": "^2.45.0",
+    "crypto": "^1.0.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
